@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RAKESH A — Digital Marketing & Content Writing</title>
+  <meta name="description" content="Portfolio of RAKESH A — Digital Marketing Specialist & Content Writer. SEO, Social Media, Google Ads, Content Strategy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1620; --muted:#98a0ad; --accent:#7c5cff; --glass:rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#05060a 0%, #071025 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:32px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:18px}
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:13px}
+    nav{display:flex;gap:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .hero-left h2{font-size:28px;margin:0 0 8px}
+    .hero-left p{color:var(--muted);margin:0 0 14px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border-radius:999px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);font-weight:600;font-size:13px}
+    .cta-row{display:flex;gap:12px;margin-top:16px}
+    .primary{background:linear-gradient(90deg,var(--accent),#4c9cff);padding:10px 14px;border-radius:12px;color:white;border:none;font-weight:700;text-decoration:none}
+    .secondary{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:12px;text-decoration:none}
+
+    /* Right column profile */
+    .profile{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .avatar{width:140px;height:140px;border-radius:20px;background:linear-gradient(135deg,#1b2430,#122235);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:36px;color:white}
+    .meta{color:var(--muted);font-size:14px}
+
+    /* Grid sections */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .col-span-2{grid-column:span 2}
+
+    /* Portfolio */
+    .project{display:flex;gap:12px;align-items:flex-start}
+    .project .thumb{width:120px;height:80px;border-radius:10px;background:linear-gradient(135deg,#0e1721,#08101a);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+    .project h3{margin:0;font-size:16px}
+    .project p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* Experience & content samples */
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .timeline-item{padding:12px;border-radius:12px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+
+    /* To-do list */
+    .todo-input{display:flex;gap:8px;margin-top:8px}
+    input[type=text],textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:10px;color:#e6eef6;width:100%}
+    button{cursor:pointer}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr;}}
+    @media (max-width:520px){.logo{width:44px;height:44px;font-size:16px}.avatar{width:120px;height:120px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RA</div>
+        <div>
+          <h1>RAKESH A</h1>
+          <div class="subtitle">BTech • Digital Marketing Specialist & Content Writer</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#portfolio">Portfolio</a>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card hero-left">
+        <h2>Hi — I’m RAKESH. I grow brands with SEO-led content & data-driven marketing.</h2>
+        <p>I’m a Digital Marketing Specialist and Content Writer with a <strong>BTech</strong> and over <strong>1 year</strong> of experience delivering measurable growth across SEO, social, and paid channels.</p>
+
+        <div class="skills">
+          <div class="chip">SEO</div>
+          <div class="chip">Content Strategy</div>
+          <div class="chip">Copywriting</div>
+          <div class="chip">Google Ads</div>
+          <div class="chip">Social Media</div>
+          <div class="chip">Email Marketing</div>
+        </div>
+
+        <div class="cta-row">
+          <a class="primary" href="#contact">Hire Me</a>
+          <a class="secondary" href="#portfolio">See Case Studies</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted);font-size:13px">Quick stats — <strong>1+</strong> years experience • <strong>10+</strong> projects • Improved organic traffic by <strong>20-150%</strong> in selected case studies.</div>
+      </div>
+
+      <aside class="card profile">
+        <div class="avatar">RA</div>
+        <div style="font-weight:700">RAKESH A</div>
+        <div class="meta">Digital Marketing Specialist & Content Writer</div>
+        <div class="meta">BTech</div>
+        <div style="width:100%;display:flex;gap:8px;margin-top:8px">
+          <a class="btn" href="#contact">Email</a>
+          <a class="btn" href="#portfolio">Download CV</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="card col-span-2">
+        <h3 id="portfolio">Selected Case Studies & Portfolio</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+          <!-- Case study 1 -->
+          <div class="project">
+            <div class="thumb">E‑Com</div>
+            <div>
+              <h3>eCommerce SEO & Content Strategy</h3>
+              <p class="muted">Improved organic sessions by 72% in 4 months via keyword-driven content, technical fixes, and listing optimizations.</p>
+            </div>
+          </div>
+
+          <!-- Case study 2 -->
+          <div class="project">
+            <div class="thumb">Brand</div>
+            <div>
+              <h3>Social Campaign — Brand Awareness</h3>
+              <p class="muted">Designed high-converting creatives + copy for Instagram & Facebook; increased engagement rate by 85% and CTR by 2.1x.</p>
+            </div>
+          </div>
+
+          <!-- Case study 3 -->
+          <div class="project">
+            <div class="thumb">PPC</div>
+            <div>
+              <h3>Google Ads — Lead Gen</h3>
+              <p class="muted">Optimized search campaigns to reduce CPL by 38% while maintaining volume through negative keyword & ad copy testing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Services</h3>
+        <ul style="margin:10px 0 0;padding-left:18px;color:var(--muted)">
+          <li><strong>SEO & Content:</strong> Keyword research, content calendars, on‑page optimizations.</li>
+          <li><strong>Paid Advertising:</strong> Google Ads setup & optimization, retargeting.</li>
+          <li><strong>Social Media:</strong> Strategy, creatives, community growth.</li>
+          <li><strong>Copywriting:</strong> Blogs, landing pages, email sequences.</li>
+        </ul>
+      </div>
+
+      <div class="card col-span-2">
+        <h3>Experience & Timeline</h3>
+        <div class="timeline" style="margin-top:10px">
+          <div class="timeline-item">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div><strong>Marketing Associate</strong> — Digital Agency</div>
+              <div class="muted">2024 — Present</div>
+            </div>
+            <div class="muted" style="margin-top:6px">Worked on SEO, content calendars, client reporting, and paid campaigns. Built 10+ landing pages and managed a content team of 2 writers.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div><strong>Freelance Content Writer</strong></div>
+              <div class="muted">2023 — 2024</div>
+            </div>
+            <div class="muted" style="margin-top:6px">Wrote SEO-focused blog posts, product descriptions, and ad copy for startups and eCommerce stores.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Content Writing Samples</h3>
+        <ol style="color:var(--muted);margin:10px 0 0;padding-left:18px">
+          <li>How to choose the best kitchen appliances (SEO blog)</li>
+          <li>10 proven tips to reduce cart abandonment (eCommerce guide)</li>
+          <li>Brand voice & tagline development for a fintech startup</li>
+        </ol>
+      </div>
+
+      <div class="card col-span-2">
+        <h3>To‑Do / Upcoming Work</h3>
+        <div id="todoList" style="margin-top:10px;display:flex;flex-direction:column;gap:8px"></div>
+        <div class="todo-input">
+          <input id="todoInput" type="text" placeholder="Add a task (e.g., Draft blog on CRO)" />
+          <button id="addTodo" class="primary">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 id="contact">Contact</h3>
+        <p class="muted">Email: <strong>rakesh@example.com</strong></p>
+        <p class="muted">Open to remote, contract, and freelance work.</p>
+        <form id="contactForm" style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="text" id="email" placeholder="Your email" required />
+          <textarea id="message" rows="4" placeholder="Message"></textarea>
+          <button type="submit" class="primary">Send message</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Testimonials</h3>
+        <div style="margin-top:10px;color:var(--muted)">
+          “Rakesh delivered clear, measurable improvements to our organic traffic and helped scale ad campaigns efficiently.” — Client A
+        </div>
+      </div>
+
+    </section>
+
+    <footer>© <span id="year"></span> RAKESH A — Digital Marketing & Content Writing • Built with ❤️</footer>
+  </div>
+
+  <script>
+    // small interactive behaviors
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // To-do list
+    const todoListEl = document.getElementById('todoList');
+    const todoInput = document.getElementById('todoInput');
+    document.getElementById('addTodo').addEventListener('click', ()=>{
+      const v = todoInput.value.trim(); if(!v) return; addTodo(v); todoInput.value='';
+    });
+    function addTodo(text){
+      const item = document.createElement('div'); item.className='timeline-item';
+      item.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><div>${escapeHtml(text)}</div><button style=\"background:transparent;border:none;color:var(--muted);cursor:pointer\">Done</button></div>`;
+      item.querySelector('button').addEventListener('click', ()=>item.remove());
+      todoListEl.prepend(item);
+    }
+    function escapeHtml(s){return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');}
+
+    // Contact form basic handling
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email){alert('Please provide name and email.');return}
+      // In production replace this with API call / email endpoint
+      alert('Thanks, '+name+' — your message has been noted (demo).');
+      form.reset();
+    });
+
+    // small demo content: prefill a couple of todos
+    ['Draft: CRO blog','Audit: client-site.com SEO','Prepare Google Ads report'].forEach(addTodo);
+  </script>
+</body>
+</html>

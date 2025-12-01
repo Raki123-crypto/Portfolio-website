@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAKESH A - Digital Marketing Specialist & Content Writer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Dark Theme Configuration */
+        :root {
+            --color-primary: #1F2937; /* Dark Slate Gray */
+            --color-secondary: #4F46E5; /* Indigo */
+            --color-text: #F3F4F6; /* Light Gray */
+            --color-card-bg: #111827; /* Darker Slate */
+            --color-highlight: #6366F1; /* Brighter Indigo */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-highlight);
+            border-radius: 10px;
+        }
+        .section-heading {
+            color: var(--color-highlight);
+            text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+        }
+        .card-animation {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-animation:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-xl border-b border-gray-700">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-extrabold text-white tracking-widest">RAKESH A<span class="text-indigo-400">.</span></a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-indigo-400 transition duration-150">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition duration-150">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition duration-150">Experience</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-indigo-400 transition duration-150">Portfolio</a>
+                    <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition duration-150">Contact</a>
+                </div>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-700 transition duration-150">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900">
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">About</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Experience</a>
+            <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Portfolio</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center justify-center text-center">
+            <div class="max-w-4xl fade-in-up">
+                <span class="text-indigo-400 text-lg font-semibold uppercase tracking-widest block mb-2">Results-Driven Digital Marketing</span>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-white leading-tight mb-6">
+                    I Turn <span class="text-indigo-400">Strategy</span> Into <span class="text-indigo-400">Revenue.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    RAKESH A, a Digital Marketing Specialist & Content Writer with a BTech qualification. I leverage 1+ years of hands-on experience from aedutree company to drive measurable growth through SEO, captivating content, and targeted ad campaigns.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#portfolio" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">View Case Studies</a>
+                    <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 border border-indigo-500">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1 fade-in-up">
+                    <h2 class="text-4xl font-bold section-heading mb-4">About Me</h2>
+                    <p class="text-gray-400 text-lg">My foundation is in engineering, but my passion is driving business growth through digital storytelling and data-backed strategies.</p>
+                </div>
+                <div class="lg:col-span-2 space-y-6 fade-in-up">
+                    <p class="text-gray-300 text-lg">
+                        I am RAKESH A, a dedicated Digital Marketing Specialist who bridges the gap between technical understanding (BTech background) and creative execution. My goal is simple: to build high-performing digital assets that convert.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        For over a year at <strong class="text-indigo-400">aedutree company</strong>, I've honed my skills in optimizing end-to-end user journeys, from the initial search query (SEO/Google Ads) to final conversion (Email Marketing/Copywriting). I don't just manage campaigns; I build frameworks for sustainable digital success.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="award" class="w-6 h-6 text-indigo-400"></i>
+                            <span class="text-gray-300 font-medium">BTech Qualification</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
+                            <span class="text-gray-300 font-medium">1+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="target" class="w-6 h-6 text-indigo-400"></i>
+                            <span class="text-gray-300 font-medium">Results-Driven Strategy</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="pen-tool" class="w-6 h-6 text-indigo-400"></i>
+                            <span class="text-gray-300 font-medium"> Content Writer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">My Digital Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <!-- Skill Card Template -->
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700">
+                    <i data-lucide="search" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">SEO Strategy</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 50ms;">
+                    <i data-lucide="share-2" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Social Media Marketing</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 100ms;">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Google Ads (PPC)</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 150ms;">
+                    <i data-lucide="pencil-ruler" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Branding</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 200ms;">
+                    <i data-lucide="mail" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Email Marketing</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 250ms;">
+                    <i data-lucide="message-square" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Copywriting</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-xl text-center card-animation fade-in-up hover:bg-gray-700" style="transition-delay: 300ms;">
+                    <i data-lucide="layout-list" class="w-8 h-8 text-indigo-400 mx-auto mb-3"></i>
+                    <p class="text-sm font-semibold text-gray-200">Content Strategy</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. Experience Section -->
+        <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">Professional Journey</h2>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-2xl p-8 card-animation fade-in-up">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-indigo-400">Digital Marketing Specialist & Content Writer</h3>
+                        <p class="text-lg font-medium text-gray-200">aedutree company</p>
+                        <p class="text-sm text-gray-400 mt-1">1+ Year Experience | Full-Time</p>
+                    </div>
+                    <span class="text-xs font-semibold uppercase bg-indigo-600 text-white px-3 py-1 rounded-full">Current</span>
+                </div>
+                <ul class="list-disc list-inside text-gray-300 mt-6 space-y-3 pl-4">
+                    <li><strong class="text-white">SEO & Content Optimization:</strong> Managed on-page and technical SEO, resulting in a **35% increase** in organic traffic for key educational resource pages.</li>
+                    <li><strong class="text-white">PPC Campaign Management:</strong> Developed and executed Google Ads campaigns, reducing CPA by **15%** while maintaining a high volume of qualified leads.</li>
+                    <li><strong class="text-white">Content Creation:</strong> Wrote, edited, and optimized educational content (blogs, whitepapers, landing pages) that significantly improved user engagement metrics.</li>
+                    <li><strong class="text-white">Social Media Strategy:</strong> Implemented a content calendar and engagement strategy across key platforms, boosting follower growth by **20%** quarterly.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Services Section (Detailed Descriptions) -->
+        <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">My Core Service Offerings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
+
+                <!-- Service 1: SEO & Organic Growth -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900">
+                    <i data-lucide="globe" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">SEO & Organic Growth</h3>
+                    <p class="text-gray-400">I focus on turning search engines into your most reliable acquisition channel. This includes technical SEO audits, high-intent keyword research, and on-page optimization for sustained visibility and authority.</p>
+                </div>
+
+                <!-- Service 2: Google Ads (PPC) -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900" style="transition-delay: 100ms;">
+                    <i data-lucide="dollar-sign" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Google Ads & PPC Mastery</h3>
+                    <p class="text-gray-400">Creating laser-focused campaigns that minimize waste and maximize ROI. From Search Network ads to Display and Remarketing, I manage the full funnel to deliver immediate, measurable results.</p>
+                </div>
+
+                <!-- Service 3: High-Converting Copywriting -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900" style="transition-delay: 200ms;">
+                    <i data-lucide="feather" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">High-Converting Copywriting</h3>
+                    <p class="text-gray-400">Words that sell. I craft compelling copy for landing pages, ads, and emails, ensuring every piece of text resonates with the target audience and guides them directly towards a clear conversion action.</p>
+                </div>
+
+                <!-- Service 4: Content Strategy & Planning -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900" style="transition-delay: 300ms;">
+                    <i data-lucide="layers" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Content Strategy & Planning</h3>
+                    <p class="text-gray-400">Developing a strategic content roadmap aligned with business goals. I map content to the buyer's journey to attract, educate, and nurture prospects into loyal customers.</p>
+                </div>
+
+                <!-- Service 5: Social Media Management -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900" style="transition-delay: 400ms;">
+                    <i data-lucide="megaphone" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Social Media & Engagement</h3>
+                    <p class="text-gray-400">Building brand presence and community on platforms like LinkedIn, Instagram, and Facebook. I create engaging content designed for viral potential and direct customer interaction.</p>
+                </div>
+
+                <!-- Service 6: Email Marketing Funnels -->
+                <div class="p-8 bg-gray-900 rounded-xl card-animation fade-in-up border border-indigo-900" style="transition-delay: 500ms;">
+                    <i data-lucide="send" class="w-8 h-8 text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Email Marketing Funnels</h3>
+                    <p class="text-gray-400">Designing automated email sequences (welcome, nurture, retention) that deliver personalized value, keep your brand top-of-mind, and drive repeat business efficiently.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Portfolio/Case Studies -->
+        <section id="portfolio" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">Portfolio & Results-Driven Case Studies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- Case Study 1: Organic Traffic Surge -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl card-animation fade-in-up">
+                    <img src="https://placehold.co/800x450/374151/E5E7EB?text=SEO+Traffic+Graph" alt="SEO Case Study Visual" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold uppercase text-indigo-400 mb-2 block">Case Study 01: SEO</span>
+                        <h3 class="text-2xl font-bold text-white mb-3">Scaling Organic Visibility by 35%</h3>
+                        <p class="text-gray-400 mb-4">A complete technical and content audit for a niche B2B education platform (aedutree company). Implemented structured data, optimized site speed, and executed a 50-piece content refresh strategy.</p>
+                        <ul class="text-gray-300 space-y-1">
+                            <li><strong class="text-indigo-300">Result:</strong> 35% increase in non-branded organic sessions.</li>
+                            <li><strong class="text-indigo-300">Metric:</strong> 12 new keywords ranking on page 1 of Google.</li>
+                        </ul>
+                        <a href="#" class="inline-flex items-center mt-4 text-indigo-400 hover:text-indigo-300 font-medium transition duration-150">
+                            Read Full Report <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: PPC Cost Efficiency -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl card-animation fade-in-up" style="transition-delay: 150ms;">
+                    <img src="https://placehold.co/800x450/4B5563/E5E7EB?text=PPC+Optimization+Chart" alt="PPC Case Study Visual" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold uppercase text-indigo-400 mb-2 block">Case Study 02: Google Ads</span>
+                        <h3 class="text-2xl font-bold text-white mb-3">15% Reduction in Cost Per Acquisition</h3>
+                        <p class="text-gray-400 mb-4">Restructured and segmented complex Google Ads accounts, focusing on tighter ad group themes and negative keyword refinement. Created new, high-relevance landing page copy.</p>
+                        <ul class="text-gray-300 space-y-1">
+                            <li><strong class="text-indigo-300">Result:</strong> 15% lower average CPA while maintaining lead volume.</li>
+                            <li><strong class="text-indigo-300">Metric:</strong> Quality Score improved from 5/10 to 8/10 on core keywords.</li>
+                        </ul>
+                        <a href="#" class="inline-flex items-center mt-4 text-indigo-400 hover:text-indigo-300 font-medium transition duration-150">
+                            Read Full Report <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 7. Content Writing Samples -->
+        <section id="content-samples" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">Captivating Content Writing Samples</h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <a href="#" class="block p-5 bg-gray-800 rounded-xl card-animation hover:bg-gray-700 fade-in-up flex justify-between items-center">
+                    <div>
+                        <p class="text-lg font-semibold text-white">The Future of EdTech: Personalized Learning Paths</p>
+                        <span class="text-sm text-gray-400">SEO Blog Post, aedutree company</span>
+                    </div>
+                    <i data-lucide="file-text" class="w-6 h-6 text-indigo-400"></i>
+                </a>
+                <a href="#" class="block p-5 bg-gray-800 rounded-xl card-animation hover:bg-gray-700 fade-in-up flex justify-between items-center" style="transition-delay: 50ms;">
+                    <div>
+                        <p class="text-lg font-semibold text-white">5 Subject Lines That Triple Your Email Open Rate</p>
+                        <span class="text-sm text-gray-400">Email Marketing Guide, Industry Analysis</span>
+                    </div>
+                    <i data-lucide="file-text" class="w-6 h-6 text-indigo-400"></i>
+                </a>
+                <a href="#" class="block p-5 bg-gray-800 rounded-xl card-animation hover:bg-gray-700 fade-in-up flex justify-between items-center" style="transition-delay: 100ms;">
+                    <div>
+                        <p class="text-lg font-semibold text-white">Landing Page Teardown: Why Simplicity Sells</p>
+                        <span class="text-sm text-gray-400">Copywriting Case Example</span>
+                    </div>
+                    <i data-lucide="file-text" class="w-6 h-6 text-indigo-400"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 8. Testimonials -->
+        <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">What Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl card-animation fade-in-up">
+                    <i data-lucide="quote" class="w-8 h-8 text-indigo-400 mb-3"></i>
+                    <p class="text-gray-300 italic mb-4">"Rakesh's SEO work was transformative. Our organic ranking improved within weeks, proving his deep understanding of technical optimization."</p>
+                    <p class="font-semibold text-white">- S. K. Singh</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl card-animation fade-in-up" style="transition-delay: 50ms;">
+                    <i data-lucide="quote" class="w-8 h-8 text-indigo-400 mb-3"></i>
+                    <p class="text-gray-300 italic mb-4">"His copywriting for our new landing pages delivered an immediate lift in conversion rate. Highly creative and results-focused."</p>
+                    <p class="font-semibold text-white">- Priya B.</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl card-animation fade-in-up" style="transition-delay: 100ms;">
+                    <i data-lucide="quote" class="w-8 h-8 text-indigo-400 mb-3"></i>
+                    <p class="text-gray-300 italic mb-4">"The professionalism Rakesh brought to our social media strategy was outstanding. He turned vague goals into concrete action plans."</p>
+                    <p class="font-semibold text-white">- Ajay D</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. To-Do List / Upcoming Work (Mockup) -->
+        <section id="upcoming-work" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">Upcoming Work & Project Pipeline</h2>
+            <div class="max-w-2xl mx-auto bg-gray-800 rounded-xl shadow-2xl p-6 card-animation fade-in-up">
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg">
+                        <i data-lucide="check-square" class="w-6 h-6 text-green-400"></i>
+                        <span class="text-gray-200">Finalize Q4 Content Calendar for B2C brand.</span>
+                        <span class="ml-auto text-xs font-semibold text-indigo-400 bg-indigo-900/50 px-2 py-1 rounded-full">In Review</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg">
+                        <i data-lucide="square" class="w-6 h-6 text-gray-500"></i>
+                        <span class="text-gray-200">Develop Email Nurture Sequence (5 steps) for new SaaS client.</span>
+                        <span class="ml-auto text-xs font-semibold text-yellow-400 bg-yellow-900/50 px-2 py-1 rounded-full">In Progress</span>
+                    </li>
+                    <li class="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg">
+                        <i data-lucide="square" class="w-6 h-6 text-gray-500"></i>
+                        <span class="text-gray-200">Deep Dive Competitive Analysis for Financial Services Niche.</span>
+                        <span class="ml-auto text-xs font-semibold text-red-400 bg-red-900/50 px-2 py-1 rounded-full">To Start</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 10. Contact Form -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+            <h2 class="text-4xl font-bold section-heading text-center mb-12 fade-in-up">Let's Connect & Build Your Strategy</h2>
+            <div class="max-w-lg mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl border border-indigo-900 fade-in-up">
+                <p class="text-gray-400 mb-6 text-center">I am available for new projects. Use the form below, or reach me directly at <a href="mailto:aayappagari@gmail.com" class="text-indigo-400 hover:underline">aayappagari@gmail.com</a>.</p>
+
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-indigo-500 focus:border-indigo-500 transition duration-150">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-indigo-500 focus:border-indigo-500 transition duration-150">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Project Details</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.01]">
+                        Send Message
+                    </button>
+                    <!-- Success Message Box -->
+                    <div id="successMessage" class="hidden p-4 mt-4 text-sm text-green-100 bg-green-800 rounded-lg" role="alert">
+                        <span class="font-medium">Success!</span> Your message has been simulated to be sent to aayappagari@gmail.com. I will be in touch shortly.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/rakesh-a-profile" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-150">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <!-- X (Twitter) Icon -->
+                <a href="https://twitter.com/rakesh_a_handle" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-150">
+                    <i data-lucide="twitter" class="w-6 h-6"></i>
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://instagram.com/rakesh_a_handle" target="_blank" class="text-gray-400 hover:text-indigo-400 transition duration-150">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+                <!-- Email Icon -->
+                <a href="mailto:aayappagari@gmail.com" class="text-gray-400 hover:text-indigo-400 transition duration-150">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">RAKESH A - Digital Marketing Specialist & Content Writer</p>
+            <p class="text-gray-500 text-xs mt-1">&copy; 2025 RAKESH A Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity and Animations -->
+    <script>
+        // 1. Icon Initialization (Lucide Icons)
+        lucide.createIcons();
+
+        // 2. Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+
+        // 3. Contact Form Submission Mockup
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Simulate form submission success
+            console.log("Form submitted successfully (mockup). Target email: aayappagari@gmail.com");
+            
+            // Show success message
+            successMessage.classList.remove('hidden');
+
+            // Optionally, clear the form
+            contactForm.reset();
+
+            // Hide the success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+        });
+        
+        // 4. Scroll Animation (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                    // Stop observing once animated
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+            rootMargin: '0px 0px -50px 0px' // Slightly reduce viewport area to trigger earlier
+        });
+
+        // Target all elements with the fade-in-up class
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+            observer.observe(element);
+        });
+
+    </script>
+</body>
+</html>
